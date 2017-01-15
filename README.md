@@ -2,7 +2,7 @@
 
 # WARNING: Work in Progress, may not work as advertised. Contributions welcome.
 
-# sameersbn/skypeforlinux:0.0.1
+# sameersbn/skypeforlinux:0.0.2
 
 - [Introduction](#introduction)
   - [Contributing](#contributing)
@@ -51,7 +51,7 @@ Automated builds of the image are available on [Dockerhub](https://hub.docker.co
 > **Note**: Builds are also available on [Quay.io](https://quay.io/repository/sameersbn/skypeforlinux)
 
 ```bash
-docker pull sameersbn/skypeforlinux:0.0.1
+docker pull sameersbn/skypeforlinux:0.0.2
 ```
 
 Alternatively you can build the image yourself.
@@ -65,7 +65,7 @@ With the image locally available, install the wrapper scripts using:
 ```bash
 docker run -it --rm \
   --volume /usr/local/bin:/target \
-  sameersbn/skypeforlinux:0.0.1 install
+  sameersbn/skypeforlinux:0.0.2 install
 ```
 
 This will install a wrapper script to launch `skypeforlinux`.
@@ -98,7 +98,7 @@ To upgrade to newer releases:
   1. Download the updated Docker image:
 
   ```bash
-  docker pull sameersbn/skypeforlinux:0.0.1
+  docker pull sameersbn/skypeforlinux:0.0.2
   ```
 
   2. Run `install` to make sure the host scripts are updated.
@@ -106,7 +106,7 @@ To upgrade to newer releases:
   ```bash
   docker run -it --rm \
     --volume /usr/local/bin:/target \
-    sameersbn/skypeforlinux:0.0.1 install
+    sameersbn/skypeforlinux:0.0.2 install
   ```
 
 ## Uninstallation
@@ -114,7 +114,7 @@ To upgrade to newer releases:
 ```bash
 docker run -it --rm \
   --volume /usr/local/bin:/target \
-  sameersbn/skypeforlinux:0.0.1 uninstall
+  sameersbn/skypeforlinux:0.0.2 uninstall
 ```
 
 ## Shell Access
